@@ -9,7 +9,7 @@ interface PageProps{
 }
 
 
-const page = async ({searchParams}: PageProps) => {
+const Page = async ({searchParams}: PageProps) => {
     const {id} = searchParams
 
     if(!id || typeof id !== "string"){
@@ -30,4 +30,4 @@ const page = async ({searchParams}: PageProps) => {
     )
 }
 
-export default page
+export default Page
